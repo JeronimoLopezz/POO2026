@@ -25,7 +25,6 @@ public class main {
                 balance
         );
 
-        // Mostrar información de la cuenta
         System.out.println("\n INFORMACION DE LA CUENTA ");
         System.out.println("Numero de cuenta: "
                 + cuenta.getAccountNumber());
@@ -34,9 +33,7 @@ public class main {
         System.out.println("Saldo: $"
                 + cuenta.getBalance());
 
-
-        // DEPÓSITO
-        System.out.println("\nDEPOSITO ");
+        System.out.println("\nDEPOSITO");
 
         System.out.print("Ingrese el valor a depositar: ");
         double depositAmount = scanner.nextDouble();
