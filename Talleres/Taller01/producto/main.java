@@ -8,8 +8,7 @@ public class main {
 
         Scanner scanner = new Scanner(System.in);
 
-        // Pedir información inicial del producto
-        System.out.println("=== CREAR PRODUCTO ===");
+        System.out.println(" CREAR PRODUCTO ");
 
         System.out.print("Ingrese el nombre del producto: ");
         String name = scanner.nextLine();
@@ -20,17 +19,16 @@ public class main {
         System.out.print("Ingrese la cantidad disponible: ");
         int stock = scanner.nextInt();
 
-        // Crear el producto
+
         product producto = new product(name, price, stock);
 
-        System.out.println("\n=== PRODUCTO CREADO ===");
+        System.out.println("\n PRODUCTO CREADO");
         System.out.println("Nombre: " + producto.getName());
         System.out.println("Precio: $" + producto.getPrice());
         System.out.println("Stock: " + producto.getStock());
 
 
-        // Modificar nombre
-        System.out.println("\n=== MODIFICAR NOMBRE ===");
+        System.out.println("\nMODIFICAR NOMBRE");
 
         scanner.nextLine();
 
@@ -42,13 +40,12 @@ public class main {
         if (resultado) {
             System.out.println("Nombre modificado correctamente.");
         } else {
-            System.out.println("Nombre rechazado. No puede estar vacío.");
+            System.out.println("Nombre rechazado. No puede estar vacio.");
         }
 
         System.out.println("Nombre actual: " + producto.getName());
 
 
-        // Modificar precio
         System.out.println("\n=== MODIFICAR PRECIO ===");
 
         System.out.print("Ingrese el nuevo precio: ");
@@ -65,7 +62,6 @@ public class main {
         System.out.println("Precio actual: $" + producto.getPrice());
 
 
-        // Modificar stock
         System.out.println("\n=== MODIFICAR STOCK ===");
 
         System.out.print("Ingrese el nuevo stock: ");

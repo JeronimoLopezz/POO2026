@@ -5,14 +5,12 @@ public class product {
     private double price;
     private int stock;
 
-    // Constructor
     public product(String name, double price, int stock) {
         this.name = name;
         this.price = price;
         this.stock = stock;
     }
 
-    // Getters
     public String getName() {
         return name;
     }
@@ -25,7 +23,6 @@ public class product {
         return stock;
     }
 
-    // Modificar nombre
     public boolean setName(String newName) {
 
         if (!newName.isEmpty()) {
@@ -36,7 +33,6 @@ public class product {
         }
     }
 
-    // Modificar precio
     public boolean setPrice(double newPrice) {
 
         if (newPrice > 0) {
@@ -47,7 +43,6 @@ public class product {
         }
     }
 
-    // Modificar stock
     public boolean setStock(int newStock) {
 
         if (newStock >= 0) {
