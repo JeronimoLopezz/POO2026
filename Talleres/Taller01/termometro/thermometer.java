@@ -1,3 +1,4 @@
+package termometro;
 /*Se requiere representar un termómetro digital que mantiene la temperatura actual (temperature) 
 expresada en grados Celsius. El dispositivo solamente puede registrar temperaturas entre -50 °C y 100 °C.
 La temperatura puede ser consultada en cualquier momento. Cuando se intenta registrar una nueva temperatura, 
